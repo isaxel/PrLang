@@ -1,0 +1,3 @@
+cd ProjectDirectory
+
+dotnet run
