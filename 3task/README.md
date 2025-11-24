@@ -79,3 +79,23 @@ TCP-сервер:
 
 Это максимально похоже на Apache 1.x.
 
+
+Структура проекта:
+
+project/
+│
+├── src/
+│   ├── main.c          — основной цикл accept + fork
+│   ├── http.c          — обработка HTTP-запроса
+│   ├── http.h
+│   ├── file.c          — отправка файла
+│   ├── file.h
+│   ├── server.c        — socket/bind/listen
+│   └── server.h
+│
+├── www/                — директория контента
+│   ├── index.html
+│   ├── test.txt
+│   └── ...
+│
+└── Makefile
